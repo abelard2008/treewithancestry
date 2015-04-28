@@ -1,0 +1,9 @@
+
+<div id="container">
+    <% title "Reply" %>
+
+    <%= render @message.parent if @message.parent%>
+    <%= render 'form' %>
+
+    <%= link_to 'Back', messages_path %>
+</div>
